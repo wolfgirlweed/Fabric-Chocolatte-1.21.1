@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "chocolatte",
+	"version": "${version}",
+	"name": "chocolatte",
+	"description": "Mod made by charlotte",
+	"authors": [
+		"charlotte"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chocolatte/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wolfgirlweed.chocolatte.Chocolatte"
+		],
+		"fabric-datagen": [
+			"net.wolfgirlweed.chocolatte.ChocolatteDataGenerator"
+		],
+		"client": [
+			"net.wolfgirlweed.chocolatte.ChocolatteClient"
+		]
+	},
+	"mixins": [
+		"chocolatte.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
